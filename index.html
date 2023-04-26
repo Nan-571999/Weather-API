@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <title>Weather APP</title>
+</head>
+<body>
+    <div class="container">
+        <div class="search">
+            <input class="country" type="text" placeholder="please enter county/city" value=""/>
+            <button onclick="getWeather(getCityName())">send</button>
+        </div>
+        <div class="weatherContent">
+            <img class="weatherIcon" src="" alt="weatherIcon"/>
+            <p class="weatherDegree">-<sup>o</sup> <span>c</span></p>
+            <p class="weatherState">-</p>
+            <p class="country">-</p>
+        </div>
+    </div>
+    <div class="errorMessage">please enter correct country/city</div>
+    <div class="locationError">website can't access your location</div>
+    <script src="script.js"></script>
+</body>
+</html>
